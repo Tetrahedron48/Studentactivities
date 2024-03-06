@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -24,10 +25,7 @@ public class Main {
         }
         for (int i = 0; i < n; i++) {
             System.out.println(students[i]);
-            for(int j=0;j<num;++j) {
-                String act=students[i].getExtraActivities(j);
-                System.out.println(act);
-            }
+            System.out.println(Arrays.toString(students[i].getExtraActivities()));
             System.out.println();
         }
     }
