@@ -34,9 +34,8 @@ public class Student {
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
-    public String getExtraActivities(int k) {
-        String extraActivity = extraActivities[k];
-        return extraActivity;
+    public String[] getExtraActivities() {
+        return extraActivities;
     }
 
     public Student(String studentID,String studentName,String[] extraActivities) {
